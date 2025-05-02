@@ -22,12 +22,12 @@ object PatternsEverywhere {
      */
 
   // big idea #2: for comprehensions (generators) are all based on PM
-  val alist = List(1,2,3,4)
+  val aList = List(1,2,3,4)
   val evenNumbers = for {
     n <- aList if n % 2 == 0
   } yield 10 * n
   
-  val typles = List((1, 2), (3, 4))
+  val tuples = List((1, 2), (3, 4))
   val filterTuples = for {
     (first, second) <- tuples if first < 3
   } yield second * 100
